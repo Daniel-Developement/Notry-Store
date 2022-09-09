@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 60px;
+  z-index: 1000;
+}
+nav .logo {
+  width: 100%;
+  color: #fff;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  list-style: none;
+}
+nav ul li {
+  color: #fff;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: #9f17de;
+}
+nav ul li .btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  background-color: #9f17de;
+  color: #fff;
+  cursor: pointer;
+}
+
+#background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -100;
+}
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+#home .container .left {
+  width: 100%;
+}
+#home .container .left .title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#home .container .left .description {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#home .container .left .btn {
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1rem;
+  background-color: #9f17de;
+  color: #fff;
+}
+#home .container .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home .container .right img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  animation: logo 2s ease infinite;
+}
+@keyframes logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  70% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+#sobre {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sobre .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+#sobre .container .left {
+  width: 100%;
+}
+#sobre .container .left img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+#sobre .container .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#sobre .container .right .title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#sobre .container .right .title span {
+  color: #9f17de;
+  border-bottom: 2px solid #9f17de;
+}
+#sobre .container .right .list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#sobre .container .right .list .card {
+  padding: 20px 25px;
+  border-radius: 5px;
+  background-color: #121212;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#sobre .container .right .list .card i {
+  width: 25px;
+  color: #9f17de;
+  transition: all 0.5s ease;
+}
+#sobre .container .right .list .card span {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+#sobre .container .right .list .card:hover {
+  background-color: #9f17de;
+}
+#sobre .container .right .list .card:hover i {
+  color: #fff;
+}
+#sobre .container .right .list .card:hover span {
+  color: #000;
+}
+
+#contadores .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+#contadores .container .left {
+  width: 100%;
+}
+#contadores .container .left img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+#contadores .container .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#contadores .container .right .title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#contadores .container .right .title span {
+  color: #9f17de;
+  border-bottom: 2px solid #9f17de;
+}
+#contadores .container .right .list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+#contadores .container .right .list .card {
+  padding: 20px 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+#contadores .container .right .list .card .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#contadores .container .right .list .card .pregress40 {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #323232;
+  overflow: hidden;
+}
+#contadores .container .right .list .card .pregress40::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #9f17de;
+  transition: 5s ease;
+  animation: progress40 3s ease;
+}
+@keyframes progress40 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+#contadores .container .right .list .card .pregress70 {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #323232;
+  overflow: hidden;
+}
+#contadores .container .right .list .card .pregress70::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #9f17de;
+  transition: 5s ease;
+  animation: pregress70 3s ease;
+}
+@keyframes pregress70 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+#contadores .container .right .list .card .pregress100 {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background-color: #323232;
+  overflow: hidden;
+}
+#contadores .container .right .list .card .pregress100::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9f17de;
+  transition: 5s ease;
+  animation: pregress100 3s ease;
+}
+@keyframes pregress100 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #home .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+  }
+  #home .container .left {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
