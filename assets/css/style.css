@@ -326,6 +326,24 @@ nav ul li .btn {
   }
 }
 
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #121212;
+  margin-top: 40px;
+}
+footer p {
+  color: #fff;
+}
+footer p a {
+  color: #9f17de;
+  border-bottom: 2px solid #9f17de;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1000px) {
   #home .container {
     display: flex;

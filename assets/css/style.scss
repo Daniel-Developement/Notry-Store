@@ -378,6 +378,26 @@ nav{
     }
 }
 
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #121212;
+    margin-top: 40px;
+
+    p{
+        color: #fff;
+
+        a{
+            color: #9f17de;
+            border-bottom: 2px solid #9f17de;
+            text-decoration: none;
+        }
+    }
+}
+
 @media screen and(max-width: 1000px) {
     #home {
         .container {
